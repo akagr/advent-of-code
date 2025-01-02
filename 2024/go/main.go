@@ -15,7 +15,7 @@ func getInput(day int) (string, error) {
 		return string(content), nil
 	}
 
-	return "", errors.New("Problem reading input file")
+	return "", errors.New(fmt.Sprintf("Problem reading input file: %s", inputFile))
 }
 
 func main() {
